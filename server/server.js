@@ -70,7 +70,7 @@ server = require("http").createServer((req, res) => {
 
     // Set CORS headers if enabled in the configuration or allow only the children servers.
     for (let server of global.servers) if (server.ip !== Config.host && server.ip) {
-        let http = server.ip.startsWith("codename-tachyon.onrender.com") ? `http://${server.ip}` : `https://${server.ip}`;
+        let http = server.ip.startsWith("localhost") ? `http://${server.ip}` : `https://${server.ip}`;
         serversIP.push(http);
     };
     if (Config.allow_ACAO || serversIP.includes(req.headers.origin)) {
