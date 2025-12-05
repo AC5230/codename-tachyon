@@ -15,14 +15,14 @@ module.exports = {
             // The above is required if your VM (the machine that hosts the website stuff) doesn't support multi-ports and forces everything through the main server.
             // This also overrides the below HOST and PORT settings to be identical to the main server's HOST/PORT (by default, 3000).
 
-            host: "localhost:3001", // Server host location.
+            host: "codename-tachyon.onrender.com", // Server host location.
             port: 3001, // The port on the server.
-            id: "loc", // (<host>/#<id>)
+            id: "tdm", // (<host>/#<id>)
             featured: false,
 
-            region: "local", // The region the server is on.
+            region: "ohio", // The region the server is on.
             gamemode: ["tdm"], // The selected gamemode.
-            player_cap: 80, // The maximum number of players that can join the server. Not including bots.
+            player_cap: 20, // The maximum number of players that can join the server. Not including bots.
 
             properties: { // This overrides settings in the config.js file, providing the selected gamemode doesn't also override it.
                 teams: 2,
@@ -34,14 +34,14 @@ module.exports = {
             // The above is required if your VM (the machine that hosts the website stuff) doesn't support multi-ports and forces everything through the main server.
             // This also overrides the below HOST and PORT settings to be identical to the main server's HOST/PORT (by default, 3000).
 
-            host: "localhost:3002", // Server host location.
+            host: "codename-tachyon.onrender.com", // Server host location.
             port: 3002, // The port on the server.
-            id: "lod", // (<HOST>/#<SERVER_ID>)
+            id: "ffa", // (<HOST>/#<SERVER_ID>)
             featured: false,
 
-            region: "local", // The region the server is on.
+            region: "ohio", // The region the server is on.
             gamemode: ["ffa"], // The selected gamemode.
-            player_cap: 80, // Not including bots.
+            player_cap: 20, // Not including bots.
 
             properties: { // This overrides settings in the config.js file, providing the selected gamemode doesn't also override it.
                 bot_cap: 16,
