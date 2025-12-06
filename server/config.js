@@ -26,7 +26,7 @@ module.exports = {
 
             properties: { // This overrides settings in the config.js file, providing the selected gamemode doesn't also override it.
                 teams: 2,
-                bot_cap: 32,
+                bot_cap: 8,
             }
         },
         {
@@ -44,7 +44,7 @@ module.exports = {
             player_cap: 20, // Not including bots.
 
             properties: { // This overrides settings in the config.js file, providing the selected gamemode doesn't also override it.
-                bot_cap: 16,
+                bot_cap: 8,
                 daily_tank: {
                     tank: "whirlwind",
                     tier: 3,
