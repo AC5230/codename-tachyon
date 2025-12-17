@@ -129,7 +129,18 @@ Class.flankGuard = {
             SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard]),
             TYPE: "bullet"
         }
-    }, 3)
+    },
+    {
+        POSITION: {
+            LENGTH: 15,
+            WIDTH: 8,
+            ANGLE: 180
+        },
+        PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard]),
+            TYPE: "bullet"
+        }
+    },)
 }
 Class.machineGun = {
     PARENT: "genericTank",
@@ -558,9 +569,9 @@ Class.helix = {
         },
     ],
 }
-Class.hexaTank = {
+Class.quadTank = {
     PARENT: "genericTank",
-    LABEL: "Hexa Tank",
+    LABEL: "Quad Tank",
     DANGER: 6,
     GUNS: weaponArray({
         POSITION: [18, 8, 1, 0, 0, 0, 0],
@@ -568,7 +579,7 @@ Class.hexaTank = {
             SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard, g.flankGuard]),
             TYPE: "bullet"
         }
-    }, 6, 0.5)
+    }, 4, 0.5)
 }
 Class.hunter = {
     PARENT: "genericTank",
@@ -5125,7 +5136,7 @@ Class.basic.UPGRADES_TIER_1 = ["twin", "sniper", "machineGun", "flankGuard", "di
     Class.basic.UPGRADES_TIER_2 = ["smasher"]
         Class.smasher.UPGRADES_TIER_3 = ["megaSmasher", "spike", "autoSmasher", "landmine"]
 
-    Class.twin.UPGRADES_TIER_2 = ["doubleTwin", "tripleShot", "gunner", "hexaTank", "helix"]
+    Class.twin.UPGRADES_TIER_2 = ["doubleTwin", "tripleShot", "gunner", "quadTank", "helix"]
         Class.twin.UPGRADES_TIER_3 = ["dual", "bulwark", "musket"]
         Class.doubleTwin.UPGRADES_TIER_3 = ["tripleTwin", "hewnDouble", "autoDouble", "bentDouble"]
         Class.tripleShot.UPGRADES_TIER_3 = ["pentaShot", "spreadshot", "bentHybrid", "bentDouble", "triplet", "triplex"]
@@ -5138,13 +5149,14 @@ Class.basic.UPGRADES_TIER_1 = ["twin", "sniper", "machineGun", "flankGuard", "di
         Class.rifle.UPGRADES_TIER_3 = ["musket", "crossbow", "armsman", "revolver"]
         Class.marksman.UPGRADES_TIER_3 = ["deadeye", "nimrod", "revolver", "fork"]
 
-    Class.machineGun.UPGRADES_TIER_2 = ["artillery", "minigun", "gunner", "sprayer"]
+    Class.machineGun.UPGRADES_TIER_2 = ["artillery", "minigun", "gunner"]
         Class.minigun.UPGRADES_TIER_3 = ["streamliner", "nailgun", "cropDuster", "barricade", "vulture"]
-        Class.sprayer.UPGRADES_TIER_3 = ["redistributor", "phoenix", "atomizer", "focal"]
+        Class.machineGun.UPGRADES_TIER_3 = ["sprayer"]
+            Class.sprayer.UPGRADES_TIER_4 = ["redistributor", "phoenix", "atomizer", "focal"]
 
-    Class.flankGuard.UPGRADES_TIER_2 = ["hexaTank", "triAngle", "auto3", "trapGuard", "triTrapper"]
-        Class.flankGuard.UPGRADES_TIER_3 = ["tripleTwin", "quadruplex"]
-        Class.hexaTank.UPGRADES_TIER_3 = ["octoTank", "cyclone", "hexaTrapper"]
+    Class.flankGuard.UPGRADES_TIER_2 = ["quadTank", "triAngle", "auto3", "trapGuard", "triTrapper"]
+        Class.flankGuard.UPGRADES_TIER_3 = ["tripleTwin"]
+        Class.quadTank.UPGRADES_TIER_3 = ["octoTank", "cyclone", "hexaTrapper", "quadruplex"]
         Class.triAngle.UPGRADES_TIER_3 = ["fighter", "booster", "falcon", "bomber", "autoTriAngle", "surfer", "eagle", "phoenix", "vulture"]
         Class.auto3.UPGRADES_TIER_3 = ["auto5", "mega3", "auto4", "banshee"]
 

@@ -107,8 +107,8 @@ module.exports = {
         return 0;
     },
 
-    level_cap: 45, // Maximum normally achievable level.
-    level_cap_cheat: 45, // Maximum level via the level-up key and auto-level-up.
+    level_cap: 60, // Maximum normally achievable level.
+    level_cap_cheat: 60, // Maximum level via the level-up key and auto-level-up.
 
     skill_cap: 9, // Default skill caps.
     tier_cap: 9, // Amount of tank tiers.
