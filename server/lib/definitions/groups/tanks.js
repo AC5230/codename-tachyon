@@ -120,7 +120,7 @@ Class.flankGuard = {
     BODY: {
         SPEED: 1.1 * base.SPEED
     },
-    GUNS: weaponArray({
+    GUNS: {
         POSITION: {
             LENGTH: 18,
             WIDTH: 8
@@ -579,7 +579,7 @@ Class.quadTank = {
             SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard, g.flankGuard]),
             TYPE: "bullet"
         }
-    }, 4, 0.5)
+    }, 4, /* 0.5 */)
 }
 Class.hunter = {
     PARENT: "genericTank",
