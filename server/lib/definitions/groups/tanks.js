@@ -120,27 +120,29 @@ Class.flankGuard = {
     BODY: {
         SPEED: 1.1 * base.SPEED
     },
-    GUNS: [{
-        POSITION: {
-            LENGTH: 18,
-            WIDTH: 8
+    GUNS: [
+        {
+            POSITION: {
+                LENGTH: 18,
+                WIDTH: 8
+            },
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard]),
+                TYPE: "bullet"
+            }
         },
-        PROPERTIES: {
-            SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard]),
-            TYPE: "bullet"
+        {
+            POSITION: {
+                LENGTH: 15,
+                WIDTH: 8,
+                ANGLE: 180
+            },
+            PROPERTIES: {
+                SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard]),
+                TYPE: "bullet"
+            }
         }
-    },
-    {
-        POSITION: {
-            LENGTH: 15,
-            WIDTH: 8,
-            ANGLE: 180
-        },
-        PROPERTIES: {
-            SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard]),
-            TYPE: "bullet"
-        }
-    },]
+    ]
 }
 Class.machineGun = {
     PARENT: "genericTank",
