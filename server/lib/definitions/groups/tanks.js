@@ -445,7 +445,7 @@ Class.doubleFlail = {
 }
 Class.doubleTwin = {
     PARENT: "genericTank",
-    LABEL: "Double Twin",
+    LABEL: "Twin Flank",
     DANGER: 6,
     GUNS: weaponArray(weaponMirror({
         POSITION: {
