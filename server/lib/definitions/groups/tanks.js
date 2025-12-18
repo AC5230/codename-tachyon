@@ -120,7 +120,7 @@ Class.flankGuard = {
     BODY: {
         SPEED: 1.1 * base.SPEED
     },
-    GUNS: {
+    GUNS: [{
         POSITION: {
             LENGTH: 18,
             WIDTH: 8
@@ -140,7 +140,7 @@ Class.flankGuard = {
             SHOOT_SETTINGS: combineStats([g.basic, g.flankGuard]),
             TYPE: "bullet"
         }
-    },)
+    },]
 }
 Class.machineGun = {
     PARENT: "genericTank",
