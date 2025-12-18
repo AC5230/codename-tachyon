@@ -5160,7 +5160,7 @@ Class.basic.UPGRADES_TIER_1 = ["twin", "sniper", "machineGun", "flankGuard", "di
         Class.flankGuard.UPGRADES_TIER_3 = ["tripleTwin"]
         Class.quadTank.UPGRADES_TIER_3 = ["octoTank", "cyclone", "hexaTrapper", "auto5", "quadruplex"]
         Class.triAngle.UPGRADES_TIER_3 = ["fighter", "booster", "falcon", "bomber", "autoTriAngle", "surfer", "eagle", "phoenix", "vulture"]
-        Class.auto3.UPGRADES_TIER_3 = ["auto5", "mega3", "auto4", "banshee", ""]
+        Class.auto3.UPGRADES_TIER_3 = ["auto5", "mega3", "auto4", "architect", "banshee"]
 
     Class.director.UPGRADES_TIER_2 = ["overseer", "cruiser", "underseer", "spawner"]
         Class.director.UPGRADES_TIER_3 = ["manager", "bigCheese"]
